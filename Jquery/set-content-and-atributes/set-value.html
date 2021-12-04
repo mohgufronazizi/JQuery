@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$("#btn1").click(function(){
+				$("#test1").text("Kalimat1 Berubah!"); });
+			$("#btn2").click(function(){
+				$("#test2").html("<b>Kalimat2 Juga!</b>"); });
+			$("#btn3").click(function(){
+				$("#test3").val("PastiBisa"); }); 
+		});
+	</script>
+</head>
+<body>
+	<p id="test1">PerhatikanKalimatINI.</p>
+	<p id="test2"> PerhatikanJUGA KalimatItu.</p>
+	<p>Input field: <input type="text" id="test3" value="Indonesia"></p>
+	<button id="btn1">Set Text</button>
+	<button id="btn2">Set HTML</button>
+	<button id="btn3">Set Value</button>
+</body>
+</html>

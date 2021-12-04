@@ -1,0 +1,33 @@
+<html><head>
+	<script src="../assets/js/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("p.flip").click(function(){
+			$("p").filter(".flip2").fadeToggle("slow");
+			$("p").filter(".flip3").fadeToggle(2000);
+		}); 
+	}); 
+	</script>
+	<style type="text/css">
+	div.panel, p.flip{
+		line-height: 30px; 
+		margin:auto;
+		font-size:16px; 
+		padding:5px;
+		text-align:center; 
+		background:#555;
+		border:solid1px #666; 
+		color:#ffffff;
+		border-radius:3px; 
+		user-select:none
+	} 
+	</style> 
+</head>
+<body>
+	<div class="panel" style="display: block;">
+		<p class="flip">Click to fade in/out box</p>
+		<p class="flip2">Iniadalahkalimatawalyang biasanyamenjadiunggulanparagraf.</p>
+		<p class="flip3">BersamaJong Kodingbin Jong Kreatif, andaakandilatihbahasapemrogramanweb, mohondimaksimalkankesempatanini</p>
+	</div>
+</body>
+</html>

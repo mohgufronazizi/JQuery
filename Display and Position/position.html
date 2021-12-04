@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- sattic: elemen ditampilkan sesui dengan urutan pada halamn web secara default -->
+<!-- kalau overlay set position static akan nempel pada body -->
+<!-- kalau overlay set position relative akan nempel pada gambar -->
+<!-- z-index adalah level tumpukan pada layout -->
+<html>
+<head>
+	<title>Position</title>
+	<style type="text/css">
+		.box{
+			position: relative;
+			height: 380px;
+			background: blue;
+			overflow: hidden;
+		}
+		.overlay{
+			position: absolute;
+			top: 0;
+			left: 0;
+			color: white;
+		}
+		img{
+			max-width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<img src="sakura-2.jpg">
+		<div class="overlay">
+			text overlay
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+body{
+	background: #e4e4e4;
+}
+
+/*global = dekstop */
+.container{
+	width: 768px;
+	min-height: 200px;
+	margin: auto;
+	background: #ffffff;
+	padding: 20px;
+	display: flex;
+}
+.sidebar{
+	/*float: left;*/
+	width: 240px;
+	height: 400px;
+	background: red;
+}
+.content{
+	/*float: left;*/
+	/*width: 600px;*/
+	flex-grow: 1;
+	height: 400px;
+	background: blue;
+}
+
+/*.clear{
+	clear: both;
+}*/
+
+
+/*tablet*/
+@media screen and (max-widht:  760px){
+	
+	.container{
+		width: 600px;
+		flex-direction: column;
+	}
+	.sidebar{
+		width: auto;
+		/*width: 100%;*/
+		/*float: none;*/
+	}
+	.content{
+		/*width: 100%;*/
+		/*float: none;*/
+	}	
+}
+
+/*mobile*/
+@media screen and (max-widht: 600px){
+	.container{
+		width: 100%;
+		padding: 0;
+	}
+	.sidebar{
+		display: none;
+	}
+	.content{
+		/*width: 100%;*/
+		/*float: none;*/
+	}
+}

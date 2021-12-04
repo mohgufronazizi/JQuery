@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- flex secara default kesamping -->
+<!-- untuk mnegaturnya bisa tambahkan flex-direction untuk mengatur ke bawah ( flex-direction: column; )-->
+<!-- justify-content: center; berfungsi untuk membuat item di tengah-->
+
+<!-- justify-content dan align-item berfungsi hanya di dalam flex -->
+<!-- alighn-item berlawanan arah dengan justify -content -->
+<html>
+<head>
+	<title>flex-3</title>
+	<style type="text/css">
+		.flexbox{
+			display: flex;
+			background: blue;
+			height: 400px;
+		}
+		.box1{
+			height: 200px;
+			/*widht: 200px; /* fixed widht*/
+			background: red;
+			flex-grow: 2;
+		}
+		.box2{
+			height: 200px;
+			background: yellow;
+			flex-grow: 1;
+		}
+	</style>
+</head>
+<body>
+	<div class="flexbox">
+		<div class="box1"></div>
+		<div class="box2"></div>
+	</div>
+	<br>
+	<div class="flexbox">
+		<div class="box1"></div>
+		<div class="box2"></div>
+		<div class="box1"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				alert($("#jong").attr("href"));
+			}); 
+		});
+	</script>
+</head>
+<body>
+	<p><a href="https://jongkreatif.com" id="jong">jongkreatif.com</a></p>
+	
+	<button>Show href Value</button>
+</body>
+</html>

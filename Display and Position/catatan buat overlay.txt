@@ -1,0 +1,3 @@
+container harus flex
+
+kalu mau pakai sticky

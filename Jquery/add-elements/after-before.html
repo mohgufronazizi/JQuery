@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+
+	<script src="asset/js/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#btn1").click(function(){
+				$("img").before("<b>TeksSebelum</b>");
+			});
+			$("#btn2").click(function(){
+				$("img").after("<i>TeksSesudah</i>");
+			}); 
+		});
+	</script>
+</head>
+<body>
+	<img src="media/gambar/logojongkreatif.png" alt="jQuery" width="30%" height="30%"><br><br>
+	<button id="btn1">Insert before</button>
+	<button id="btn2">Insert after</button>
+</body>
+</html>

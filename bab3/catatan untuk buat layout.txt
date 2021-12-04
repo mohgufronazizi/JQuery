@@ -1,0 +1,3 @@
+pengaturan layout
+-untuk membuat layout yang kompleks lebih disarankan menggunakan flex box
+-untuk desain sederhana saja, menggunakan float sudah cukup

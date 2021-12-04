@@ -1,0 +1,63 @@
+<!-- 
+kata pindah == maju
+
+postition static adalah position default.
+
+penggunakan absolute hampir mirip dengan relative, yaitu mengangkat / pindah 1 dimensi dari elemen lain.
+
+ketika kita menggunakan elemen dengan posisi absolute (menggunakan properti top, left, right dan bottom), ruang yang di tempati oleh elemen tersebut di anggap tidak ada.
+
+ketika menggerakkan elemen dengan posisi absolute, elemn akan bergerak relatif terhadap posisi dari elemen parent-nya.
+selamat element parent-nya memiliki posisi non-static.
+
+dari codingan dibawah, element perent nya adalah body, jika properti top, left, right dan bottom di isi 0, maka akan menempel pada sisi body
+
+intinya, absolute relatif terhadam elemen window/tag yang membungkusnya.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>position absolute</title>
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 200px;
+			margin: auto;
+		}
+		.box1{
+			background: lightgreen;
+		}
+		.box2{
+			background: violet;
+			/*kita kasih box 2 position absolute*/
+			position: absolute;
+			/*kita geser ke kanan dan ke bawah*/
+			left: 0;
+			top: 0;
+		}
+		.box3{
+			background: orange;
+		}
+		#bungkus{
+			width: 600px;
+			height: 700px;
+			border: 10px solid gray;
+			/*agar si box 2 nyangkut (berada pada dimensi yang sama) ke bungkus maka position nya harus sama dengan si box 2*/
+			/*alasan saya menggunakan relative karena sifat nya yang pindah 1 dimensi tapi masih di anggap ada pada posisinya.*/
+			position: relative;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+
+	<h3>contoh dengan window/ tag pembungkus</h3>
+	<div id="bungkus">
+		<div class="box1"></div>
+		<div class="box2"></div>
+		<div class="box3"></div>
+	</div>
+</body>
+</html>

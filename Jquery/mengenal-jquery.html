@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Jquery</title>
+
+	<!-- cara masukkan jquery -->
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+
+	<!-- jquery adalah bahasa pemrograman javascript yang berisi fungsi fungsi -->
+	<script>
+		$(document).ready(function(){
+
+			$("button").click(function(){
+				$("p").show(); });
+
+			$("p").click(function(){
+				$(this).hide(); });
+		});
+	</script>
+</head>
+<body>
+	<p>Kalimat Paragraf Pertama. HILANG</p>
+	<p>Kalimat Paragraf Kedua dst. HILANG</p>
+	<button>MUNCUL</button>
+</body>
+</html>

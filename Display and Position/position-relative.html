@@ -1,0 +1,38 @@
+<!-- 
+kata pindah == maju
+
+position relative berfungsi mengangkat 1 dimensi item yang dipilih dari item lain, dengan meninggalkan ruang kosong ketika digeser (elemen di anggap masih ada di tempat).
+
+ketika menggerakkan elemen dengan posisi relative, elemn akan bergerak relatif terhadap posisi aslinya.
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>position relative</title>
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 200px;
+		}
+		.box1{
+			background: lightgreen;
+		}
+		.box2{
+			background: violet;
+			/*kita kasih box2 position relative*/
+			position: relative;
+			/*contoh kita geser ke kanan dan juga ke bawah*/
+			left: 30px;
+			top: 20px;
+		}
+		.box3{
+			background: orange;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+</body>
+</html>

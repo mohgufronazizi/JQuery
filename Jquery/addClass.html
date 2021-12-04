@@ -1,0 +1,33 @@
+<!-- 
+	
+Catatan untuk filter dan span:
+$("li").filter(".middle").addClass("selected");
+<li class = "middle">list item 3</li>
+$("p").find("span").addClass("selected");
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$("li").eq(1).addClass("selected");
+		});
+	</script>
+	<style> .selected { color:red; } </style>
+</head>
+<body>
+	<div>
+		<ul>
+			<li>list item 1</li>
+			<li class="selected">list item 2</li>
+			<li>list item 3</li>
+		</ul>
+	</div>
+</body>
+</html>

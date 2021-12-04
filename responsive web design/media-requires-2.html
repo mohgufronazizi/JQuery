@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	body{
+		background: #e4e4e4;
+	}
+		
+	/*global = dekstop */
+	.container{
+		width: 1000px;
+		min-height: 200px;
+		margin: auto;
+		background: #ffffff;
+		transition: 1s;
+		padding: 20px;
+	}
+
+	/*tablet*/
+	@media screen and (min-width: 641px) and (max-width:  999px){
+		.container{
+			width: 640px;
+		}
+		.sidebar{
+			width: 100%;
+			float: none;
+		}
+		.content{
+			width: 100%;
+			float: none;
+		}	
+	}
+	
+	/*mobile*/
+	@media screen and (max-width: 640px){
+		.container{
+			width: 100%;
+			padding: 0;
+		}
+		.sidebar{
+			display: none;
+		}
+		.content{
+			width: 100%;
+			float: none;
+		}
+	}
+
+	/*batas pengaturan screen*/
+
+	.sidebar{
+		float: left;
+		width: 400px;
+		height: 400px;
+		background: red;
+	}
+	.content{
+		float: left;
+		width: 600px;
+		height: 400px;
+		background: blue;
+	}
+	.clear{
+		clear: both;
+	}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<div class="sidebar">
+				
+			</div>
+			<div class="content">
+				
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</body>
+</html>

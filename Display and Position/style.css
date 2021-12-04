@@ -1,0 +1,68 @@
+body{
+	margin: 0;
+	height: 2000px;
+}
+/* wrapper{
+	
+}
+*/
+.container{
+	width: 1200px;
+	background: red;
+	margin: auto;
+	display: flex;
+}
+#header{
+	top: 0;
+	left: 0;
+	right: 0;
+	min-height: 40px;
+	background: blue;
+	position: fixed;
+	z-index: 3;
+}
+
+#terbaru{
+	background: #333333;
+	height: colc(100vh-200px);
+	padding: 100px 0; /* (vertical horizontal)*/
+}	/* */
+.video{
+	position: relative;
+	height: 400px;
+	width: 50%;
+	padding: 8px;
+}
+.video.kecil{
+	width: 25%;
+}
+#terbaru .video .cover img{
+	height: 100%;
+	width: 100%;
+	/*objecy-fit: contain; /*dipaksa tarik ke semua sudut */
+	/*object-fit: cover; /* ditampulkan sebutuhnya*/
+	/*object-fit: fill;/*mengsisi semua sudut*/
+	/*object-fit: scale-down*/
+	object-fit: fill;
+}
+#terbaru .video .overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#terbaru .video .overlay img{
+	width: 100px;
+	height: 100px;
+}
+/*
+vh : view height
+vw : view widht
+vp : view port
+*/

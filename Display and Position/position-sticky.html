@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- position fixed fungsinya elemen akan relative mengikuti layar, posisinya tetap ketika di scroll -->
+<!-- perbedaan fixed dan sticky
+
+	- fixed sudah nempel dari awal pada top
+	- sticky awalnya bisa di scroll, tapi ketika ketemu top dengan setingan px yang ditentukan, baru akan nempel dengan setingan px yang telah ditentukan
+
+ -->
+ <!-- z-index adalah level tumpukan pada layout -->
+<html>
+<head>
+	<title>Position sticky</title>
+	<style type="text/css">
+		body{
+			height: 3000px;
+		}
+		.box{
+			position: relative;
+			height: 380px;
+			background: blue;
+			overflow: hidden;
+		}
+		.overlay{
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			color: white;
+		}
+		img{
+			max-width: 100%;
+		}
+		.fixed{
+			z-index: 2;
+			position: fixed;
+			background: blue;
+			width: 100%;
+		}
+		.sticky{
+			position: sticky;
+			background: purple;
+			top: 80px;
+			z-index: 2;
+		}
+	</style>
+</head>
+<body>
+	<div class="fixed">
+		<h1>Header</h1>
+	</div>
+	<div style="height: 79px;"></div>
+	<div class="sticky">
+		<h2>Menu</h2>
+	</div>
+	<div class="box">
+		<img src="sakura-2.jpg">
+		<div class="overlay">
+			text overlay
+		</div>
+	</div>
+</body>
+</html>

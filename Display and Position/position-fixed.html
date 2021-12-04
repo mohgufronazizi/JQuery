@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- position fix jika menggunakan properti top, left right, bottom akan relatif terhadap window browser -->
+
+<!-- position fixed fungsinya elemen akan relatif mengikuti layar, posisinya tetap ketika di scroll -->
+<html>
+<head>
+	<title>Position fixed</title>
+	<style type="text/css">
+	body{
+		height: 1000px;
+		margin: 0;
+	}
+	.container{
+		width: 1200px;
+		margin: auto;
+	}
+	.box{
+		position: relative;
+		height: 380px;
+		overflow: hidden;
+	}
+	.overlay{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		color: white;
+	}
+	img{
+		max-width: 100%;
+	}
+	.fixed{
+		z-index: 2;
+		position: fixed;
+		background: blue;
+		width: 100%;
+	}
+</style>
+</head>
+<body>
+	<div class="fixed">
+		<div class="container">
+			<h1>Header</h1>
+		</div>
+	</div>
+
+	<div class="content">
+		<div class="container">
+			<div style="height: 79px;"></div>
+				<div class="box">
+					
+					<img src="sakura-2.jpg">
+					<div class="overlay">text overlay</div>
+				
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
